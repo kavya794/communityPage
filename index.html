@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Together</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    .title-animation{
+        animation-name: title-ani;
+        animation-delay: 1s;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes title-ani {
+        from{color:white;}
+        to{color: palevioletred;}
+    }
+    button:hover{
+        color:palevioletred;
+    }
+    .nav-bar{
+        border-radius: 15px;
+        border: 0px solid black;
+        background-color: transparent; 
+        color: whitesmoke;
+    }
+    input{
+        background-color: black;
+        color: whitesmoke;
+        height: 30px;
+    }
+    textarea{
+        background-color: black;
+    }
+    .mt-5{
+        margin-top: 100px !important;
+        margin-bottom: 150px !important;
+    }
+    .mt-4{
+        margin-top: 200px !important;
+    }
+    </style>
+</head>
+<body style="margin-top: 20px; margin-left: 20px; margin-right: 20px;background-color: black; color: whitesmoke;">
+    <nav-bar>
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Let's Build Together</h5>
+            </div>
+            <div class="col-md-3">
+                <a href="#home-container"><button class="nav-bar">Home</button></a>
+            </div>
+            <div class="col-md-3">
+                <a href="#about-container"><button class="nav-bar">About</button></a>
+            </div>
+            <div class="col-md-3">
+                <button class="nav-bar">Contact</button>
+            </div>
+        </div>
+    </nav-bar>
+
+
+
+    
+    <home-section id="home-container" class="text-center">
+        <div class="mt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2  class="title-animation">Let's Build Our Community Together</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Join Student Communities</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="margin-left: 50px; margin-right: 50px;">We bring together students in a transformative phase of their lives to engage in collaborative projects and foster meaningful connections, so that we can cultivate innovation, leadership, and personal growth.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <button class="text-bg-primary">Get started</button>
+                </div>
+                <div class="col-md-6">
+                    <button class="text-bg-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </home-section>
+
+
+
+    <about-section id="about-container">
+        <div class="mt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-fluid" src="./image1.png.jpg">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="h2-heading">A Community To support you</h2>
+                    <p class="about-p" style="padding-top: 40px;">Our student community is a dynamic hub for diverse students to connect and learn. In the past, we've organized workshops, webinars, and social events that have fostered skill development, knowledge expansion, and lasting friendships. We're dedicated to providing a supportive environment for students to thrive</p>
+                </div>
+            </div>
+        </div>
+    </about-section>
+
+
+    <contact-section id="contact-container">
+        <div class="mt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>We would love to hear from you!</p>
+                    <h2 style="color: palevioletred;">Contact Us</h2>
+                    <p>Have a question, suggestion, or just want to say hello? We'd love to hear from you! Our dedicated team is here to assist you with any inquiries you may have. Feel free to reach out to us using the contact information or by filling out the form. Your feedback is essential in helping us create a vibrant and supportive student community. We look forward to connecting with you!"</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="row"><input type="email" placeholder="Enter a valid email address"></div>
+                    <div class="row"><input type="text" placeholder="Enter your Name"></div>
+                    <div class="row"><input type="tel" placeholder="Enter your Mobile Number"></div>
+                    <div class="row"><textarea  placeholder="Enter a Message/Query"></textarea></div>
+                    <button style=" width:100px;"class="text-bg-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </contact-section>
+</body>
+</html>
